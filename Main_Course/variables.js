@@ -1,4 +1,4 @@
-// JavaScript File for Passanger Counting file
+
 
 // ~~~~~ Variables ~~~~~
 
