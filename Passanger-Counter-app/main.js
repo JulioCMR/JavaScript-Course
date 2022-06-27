@@ -15,7 +15,16 @@ function increment() {
     countEl.innerText = count
 }
 
-// End Button (Increment on clicks)
+// ~~~~~ End Button (Increment on clicks) ~~~~~
+
+// ~~~~~ Start Save Button function ~~~~~~~
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save() {
+    console.log(count)
+}
 
 
+// ~~~~~ End Save Button function ~~~~~~~
 
