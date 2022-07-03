@@ -41,5 +41,19 @@ let numstr = num + age
 
 console.log(numstr)
 
+// 6. Create/Render a welcome message
+// A) Grab the welcome-el paragraph and store it in a variable called welcomeEL
 
+let welcomeEL = document.getElementById("welcome-el")
 
+// B) Create two variables (name & welcome) that contains your name and the greeting we want to render on the page
+
+let welcomeBack = "Welcome back, "
+
+// C) Render the welcome message using welcomeEL.innerText
+
+welcomeEL.innerText = welcomeBack + name
+
+// D) Add an emoji to the end of the welcome message without modifying the previous code.
+
+welcomeEL.innerText += "🤝"
