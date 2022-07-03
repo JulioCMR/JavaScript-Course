@@ -54,6 +54,6 @@ let welcomeBack = "Welcome back, "
 
 welcomeEL.innerText = welcomeBack + name
 
-// D) Add an emoji to the end of the welcome message without modifying the previous code.
+// D) Add an emoji to the end of the welcome message without modifying the previous code using plus-equal.
 
 welcomeEL.innerText += "🤝"
