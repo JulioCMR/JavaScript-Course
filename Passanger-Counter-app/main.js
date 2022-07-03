@@ -19,7 +19,7 @@ let saveEL = document.getElementById("save-el")
 function increment() { 
     count += 1    
     console.log(count)
-    countEl.innerText = count
+    countEl.textContent = count
 }
 
 
@@ -32,13 +32,17 @@ function increment() {
 
 
 function save() {
-    // 2. Create a variable that contains both the count and the dash
-    let saved = " " + count + " - "
+    
+    // 2. Create a variable that contains both the count and the dash.
+    let saved = " " + count + "   -   "
 
     // 3. Render the variable in the SaveEL using innerText, don't delete the previous saved count entries.
-    saveEL.innerText += saved
+    saveEL.textContent += saved
 
-    console.log(count)
+    // 4. Set the count to 0 after every saved count entries.
+    count = 0
+    countEl.textContent = count
 }
+
 
 
