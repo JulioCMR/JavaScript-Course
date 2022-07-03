@@ -1,3 +1,13 @@
+// Variables ~~~~~~~~~~~~~~~~~~~~~~~
+
+let count = 0
+let countEl = document.getElementById("count-el")
+
+// 1. Grab the save-el paragraph and store it in a variable called saveEL
+
+let saveEL = document.getElementById("save-el")
+
+
 // ~~~~~ Start Button (Increment on clicks) ~~~~~
 
 // Initialize the count as 0
@@ -5,9 +15,6 @@
 // Increment the count variable when the button is clicked (log it out)
 // change the count-el in the HTML to increment the new count
 
-let count = 0
-
-let countEl = document.getElementById("count-el")
 
 function increment() { 
     count += 1    
@@ -15,16 +22,23 @@ function increment() {
     countEl.innerText = count
 }
 
-// ~~~~~ End Button (Increment on clicks) ~~~~~
+
 
 // ~~~~~ Start Save Button function ~~~~~~~
 
+
+
 // 1. Create a function, save(), which logs out the count when it's called
 
+
 function save() {
+    // 2. Create a variable that contains both the count and the dash
+    let saved = " " + count + " - "
+
+    // 3. Render the variable in the SaveEL using innerText, don't delete the previous saved count entries.
+    saveEL.innerText += saved
+
     console.log(count)
 }
 
-
-// ~~~~~ End Save Button function ~~~~~~~
 
