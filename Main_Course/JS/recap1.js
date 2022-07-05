@@ -75,6 +75,12 @@ console.log("11" + "14") // "1114"
 "Something went wrong, please try again" in the paragraph
 that has the id="error". */
 
+let errorMessage = document.getElementById("error")
+
+function error() {
+    errorMessage.textContent = "Something went wrong, please try again."
+}
+
 
 
 
