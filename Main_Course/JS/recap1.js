@@ -77,7 +77,7 @@ that has the id="error". */
 
 let errorMessage = document.getElementById("error")
 
-function error() {
+function purchaseError() {
     errorMessage.textContent = "Something went wrong, please try again."
 }
 
