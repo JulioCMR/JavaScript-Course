@@ -81,7 +81,7 @@ function purchaseError() {
     errorMessage.textContent = "Something went wrong, please try again."
 }
 
-
+// Calculator challenge ~~~~~~~~~~
 
 
 
