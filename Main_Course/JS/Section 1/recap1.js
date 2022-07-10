@@ -83,5 +83,47 @@ function purchaseError() {
 
 // Calculator challenge ~~~~~~~~~~
 
+// HTML file: calculator.html
+// CSS file: calculator.css
+
+/* 
+A) Create four functions: add(), substract(), divide(), multiply()
+B) Call the correct function when the user clicks on one of the buttons
+C) Perform the given calculation using num1 and num2
+D) Render the result of the calculation in the paragraph with id="sum-el"  */
+
+let num1 = 2
+let num2 = 5
+
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+
+
+
+let sumEl = document.getElementById("sum-el")
+
+
+
+function add() {
+    let result = num1 + num2
+    sumEl.textContent = "Result: " + result
+
+}
+
+function substract() {
+    let result = num1 - num2
+    sumEl.textContent = "Result: " + result
+}
+
+function divide() {
+    let result = num1 / num2
+    sumEl.textContent = "Result: " + result
+}
+
+function multiply() {
+    let result = num1 * num2
+    sumEl.textContent = "Result: " + result
+}
+
 
 
