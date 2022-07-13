@@ -9,12 +9,17 @@ let hasBlackjack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
+let sumEl = document.querySelector("#sum-el")
+let cardsEl = document.querySelector("#cards-el")
 
-let sum = firstCard + secondCard + 11
+let sum = firstCard + secondCard 
 
 // Conditionals (if-else and booleans) ---
 
 function startGame() {
+
+    sumEl.textContent = "Sum: " + sum
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
 
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
@@ -25,6 +30,7 @@ function startGame() {
         message = "You're out of the game"
         isAlive = false
     }
+    
     
     messageEl.textContent = message
 
