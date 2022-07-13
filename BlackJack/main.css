@@ -6,7 +6,7 @@ body {
     color: whitesmoke;
     background: url(/BlackJack/img/table.png);
     background-size: cover;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
@@ -18,5 +18,17 @@ h1 {
 #message-el {
     font-size: 2rem;
     font-style: italic;
+}
+
+button {
+    color: #016f32;
+    width: 18rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background: goldenrod;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2px;
 }
 
