@@ -14,7 +14,7 @@ let cardsEl = document.querySelector("#cards-el")
 
 let sum = firstCard + secondCard 
 
-// Conditionals (if-else and booleans) ---
+// Main game Function ---
 
 function startGame() {
 
@@ -37,4 +37,8 @@ function startGame() {
 }
 
 
+// New Card Function ---
 
+function newCard() {
+    console.log("Drawing a new card from the deck.")
+}
