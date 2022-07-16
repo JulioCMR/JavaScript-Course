@@ -5,6 +5,7 @@
 
 let firstCard = 4
 let secondCard = 6
+let cards = [firstCard, secondCard]
 let hasBlackjack = false
 let isAlive = true
 let message = ""
