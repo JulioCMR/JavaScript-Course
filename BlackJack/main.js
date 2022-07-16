@@ -40,5 +40,7 @@ function startGame() {
 // New Card Function ---
 
 function newCard() {
-    console.log("Drawing a new card from the deck.")
+    let newCard = 6
+    sum += newCard
+    startGame()    
 }
