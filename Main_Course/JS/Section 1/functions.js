@@ -1,6 +1,10 @@
 // Functions
 
+// Questions ---
+// 1. What are functions?
 // Reusable code of blocks
+
+// Exercises ---
 
 // Exercise 1: Create and invoke a function that countdown from the number 5 to the number 1.
 
@@ -49,3 +53,20 @@ increment()
 increment()
 
 console.log(count)
+
+// Exercise 5
+/* 
+A) Write a function that returns the total race time
+B) Call the function and store the returned value in a new variable
+C) Log the variable out */
+
+let player1Time = 102
+let player2Time = 107
+
+function getTotalRaceTime(){
+    return player1Time + player2Time
+}
+
+let totalRaceTime = getTotalRaceTime()
+
+console.log(totalRaceTime)
