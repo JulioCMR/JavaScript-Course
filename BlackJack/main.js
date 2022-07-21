@@ -3,17 +3,16 @@
 //  Variables ---
 
 
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let cards = [firstCard, secondCard]
+let cards = []
+let sum = 0
 let hasBlackjack = false
-let isAlive = true
+let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 
-let sum = firstCard + secondCard 
+
 
 // Get Random Card function ---
 
@@ -32,6 +31,14 @@ function getRandomCard() {
 // Start Game function ---
 
 function startGame(){
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+
+    sum = firstCard + secondCard
+
+    cards = [firstCard, secondCard]
+
     renderGame()
 }
 
